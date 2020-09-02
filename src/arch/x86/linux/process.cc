@@ -62,8 +62,8 @@ unameFunc(SyscallDesc *desc, int callnum, Process *process,
 
     strcpy(name->sysname, "Linux");
     strcpy(name->nodename, "sim.gem5.org");
-    strcpy(name->release, "3.0.0");
-    strcpy(name->version, "#1 Mon Aug 18 11:32:15 EDT 2003");
+    strcpy(name->release, "5.3.0-62-generic");
+    strcpy(name->version, "#1 SMP Sat Dec  1 00:00:00 GMT 2012");
     strcpy(name->machine, "x86_64");
 
     name.copyOut(tc->getMemProxy());
