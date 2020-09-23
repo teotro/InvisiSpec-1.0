@@ -2,6 +2,10 @@
 
 ############ DIRECTORY VARIABLES: MODIFY ACCORDINGLY #############
 #Need to export GEM5_PATH
+
+#That's Teotro's path
+
+export GEM5_PATH=/home/thodoris/Downloads/InvisiSpec-1.0
 if [ -z ${GEM5_PATH+x} ];
 then
     echo "GEM5_PATH is unset";
@@ -13,6 +17,7 @@ fi
 
 #Need to export SPEC_PATH
 # [mengjia] on my desktop, it is /home/mengjia/workspace/benchmarks/cpu2006
+SPEC_PATH=/home/thodoris
 if [ -z ${SPEC_PATH+x} ];
 then
     echo "SPEC_PATH is unset";
