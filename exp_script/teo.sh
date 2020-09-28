@@ -3,6 +3,10 @@
 ############ DIRECTORY VARIABLES: MODIFY ACCORDINGLY #############
 #Need to export GEM5_PATH
 export GEM5_PATH=/home/thodoris/Downloads/InvisiSpec-1.0
+
+#or path for sandman cluster at CSLAB
+#export GEM5_PATH=/home/users/ttroch/InvisiSpec-1.0
+
 if [ -z ${GEM5_PATH+x} ];
 then
     echo "GEM5_PATH is unset";
@@ -13,8 +17,11 @@ fi
 
 
 #Need to export SPEC_PATH
-# [mengjia] on my desktop, it is /home/mengjia/workspace/benchmarks/cpu2006
-SPEC_PATH=/home/thodoris
+export SPEC_PATH=/home/thodoris
+
+#or path for sandman cluster at CSLAB
+#export SPEC_PATH=/various/spec-parsec-benchmarks/spec/spec_exes_ref_inputs/static
+
 if [ -z ${SPEC_PATH+x} ];
 then
     echo "SPEC_PATH is unset";
