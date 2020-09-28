@@ -237,6 +237,6 @@ $GEM5_PATH/build/X86_MESI_Two_Level/gem5.fast \
 	--num-cpus=1 --mem-size=4GB \
     --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 \
     --cpu-type=DerivO3CPU --needsTSO=0 --scheme=$SCHEME \
-    --num-dirs=1 --ruby \
+    --num-dirs=1 --ruby --maxinsts=2000000000 \
     --network=simple --topology=Mesh_XY --mesh-rows=1 | tee -a $SCRIPT_OUT
 
