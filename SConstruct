@@ -1052,6 +1052,13 @@ def config_emitter(target, source, env):
 config_builder = Builder(emitter = config_emitter, action = config_action)
 
 main.Append(BUILDERS = { 'ConfigFile' : config_builder })
+main.Append(BUILDERS = { 'ConfigFile' : config_builder })
+main.Append(CXXFLAGS=['-Wno-implicit-fallthrough'])
+main.Append(CCFLAGS=['-Werror',
+                         '-Wno-error=deprecated-declarations',
+                       '-Wno-error=deprecated',
+                       '-Wno-error=maybe-uninitialized',
+                       ])
 
 ###################################################
 #
